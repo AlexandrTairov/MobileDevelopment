@@ -7,9 +7,8 @@
     <string name="action_settings">Настройки</string>
 
     <string name="menu_home">Личный кабинет</string>
-    <string name="menu_gallery">Каталог</string>
-    <string name="menu_slideshow">Акции</string>
-    <string name="menu_tools">Корзина</string>
-    <string name="menu_share">Share</string>
-    <string name="menu_send">Send</string>
+    <string name="menu_catalog">Каталог</string>
+    <string name="menu_shares">Акции</string>
+    <string name="menu_basket">Корзина</string>
+    <string name="menu_settings">Настройки</string>
 </resources>

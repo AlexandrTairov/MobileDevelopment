@@ -1,16 +1,17 @@
-package com.example.mobile.ui.gallery;
+package com.example.mobile.ui.shares;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class GalleryViewModel extends ViewModel {
+public class SharesViewModel extends ViewModel {
 
     private MutableLiveData<String> mText;
 
-    public GalleryViewModel() {
+    public SharesViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is gallery fragment");
+//        mText.setValue("This is slideshow fragment");
+        mText.setValue("3");
     }
 
     public LiveData<String> getText() {
