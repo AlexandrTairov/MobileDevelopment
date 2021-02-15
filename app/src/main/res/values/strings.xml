@@ -4,7 +4,6 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="nav_header_title">Магазин</string>
     <string name="nav_header_desc">Navigation header</string>
-    <string name="action_settings">Настройки</string>
 
     <string name="menu_home">Личный кабинет</string>
     <string name="menu_catalog">Каталог</string>

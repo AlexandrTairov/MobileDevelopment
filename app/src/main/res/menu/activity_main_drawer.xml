@@ -3,23 +3,23 @@
       xmlns:tools="http://schemas.android.com/tools"
       tools:showIn="navigation_view">
 
-    <group android:checkableBehavior="single">
+    <group android:checkableBehavior="single" tools:ignore="ExtraText">
         <item
                 android:id="@+id/nav_home"
-                android:title="@string/menu_home"/>
-<!--                android:icon="@drawable/ic_menu_camera"-->
+                android:title="@string/menu_home"
+                android:icon="@drawable/menu_home"/>
         <item
                 android:id="@+id/nav_catalog"
-                android:title="@string/menu_catalog"/>
-<!--                android:icon="@drawable/ic_menu_gallery"-->
+                android:title="@string/menu_catalog"
+                android:icon="@drawable/menu_catalog"/>
         <item
                 android:id="@+id/nav_shares"
-                android:title="@string/menu_shares"/>
-<!--                android:icon="@drawable/ic_menu_slideshow"-->
+                android:title="@string/menu_shares"
+                android:icon="@drawable/menu_shares"/>
         <item
                 android:id="@+id/nav_basket"
-                android:title="@string/menu_basket"/>
-<!--                android:icon="@drawable/menu_settings"-->
+                android:title="@string/menu_basket"
+                android:icon="@drawable/menu_basket"/>
         <item
                 android:id="@+id/nav_settings"
                 android:icon="@drawable/menu_settings"
