@@ -10,4 +10,5 @@
     <string name="menu_shares">Акции</string>
     <string name="menu_basket">Корзина</string>
     <string name="menu_settings">Настройки</string>
+    <string name="nav_registration">Регистрация</string>
 </resources>

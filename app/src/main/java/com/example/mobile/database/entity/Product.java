@@ -10,9 +10,9 @@ public class Product {
 
     private String image;
 
-    private double discount;
-
     private double price;
+
+    private double discount;
 
     public int getId() {
         return id;

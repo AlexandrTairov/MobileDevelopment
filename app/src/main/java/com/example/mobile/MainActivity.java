@@ -1,6 +1,8 @@
 package com.example.mobile;
 
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
+import com.example.mobile.database.connection.DatabaseConnector;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 import android.view.View;
@@ -19,6 +21,8 @@ public class MainActivity extends AppCompatActivity {
 
     private AppBarConfiguration mAppBarConfiguration;
 
+    DatabaseConnector databaseConnector;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,12 +35,15 @@ public class MainActivity extends AppCompatActivity {
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
                 R.id.nav_catalog, R.id.nav_home, R.id.nav_shares,
-                R.id.nav_basket, R.id.nav_settings)
+                R.id.nav_basket, R.id.nav_settings, R.id.nav_registration)
                 .setDrawerLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
+
+        databaseConnector = new DatabaseConnector(this);
+        SQLiteDatabase database = databaseConnector.getWritableDatabase();
     }
 
     @Override
