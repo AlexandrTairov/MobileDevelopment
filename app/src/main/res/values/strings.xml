@@ -16,5 +16,14 @@
     <string name="menu_timesheet">Расписание</string>
     <string name="menu_directions">Направления</string>
     <string name="menu_news">Новости</string>
+    <string name="employee1_description">Смирнов Александр Петрович\n
+        Образование: Екатеринбургское Высшее артиллерийское командное училище, электромеханический факультет, 2000 год\n\n
+        Квалификация: КТН, преподаватель высшей школы\n\n
+        Кредо: Сидя на спине, отупеешь вдвойне!! Голова - это огромная емкость… Заполняйте ее только полезным материалом\n\n
+        Увлечения: Горный туризм, спорт, немного компьютеры и очень много книг
+    </string>
     <string name="todo">TODO</string>
+    <string name="empl1">Смирнов А.П.</string>
+    <string name="empl2">Тестовый сотрудник</string>
+    <string name="test">Test</string>
 </resources>
