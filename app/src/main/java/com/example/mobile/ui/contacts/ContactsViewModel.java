@@ -10,8 +10,8 @@ public class ContactsViewModel extends ViewModel {
 
     public ContactsViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("2");
-//        mText.setValue("This is gallery fragment");
+        mText.setValue("123");
+
     }
 
     public LiveData<String> getText() {

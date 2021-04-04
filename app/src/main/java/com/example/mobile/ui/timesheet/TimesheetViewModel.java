@@ -10,8 +10,7 @@ public class TimesheetViewModel extends ViewModel {
 
     public TimesheetViewModel() {
         mText = new MutableLiveData<>();
-//        mText.setValue("This is slideshow fragment");
-        mText.setValue("3");
+        mText.setValue("Данная функция пока не доступна и будет добавлена в будущих патчах");
     }
 
     public LiveData<String> getText() {

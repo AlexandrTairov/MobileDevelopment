@@ -10,7 +10,11 @@ public class DirectionsViewModel extends ViewModel {
 
     public DirectionsViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is basket fragment");
+        mText.setValue("'Интеллект' на Химмаше\n\n" +
+                "620010, г. Екатеринбург, ул. Профсоюзная, 63, со стороны магазина 'Домашний'\n\n" +
+                "+7(343)382-59-05\n" +
+                "+7(912)615-76-15\n\n" +
+                "intellect@intellect96.ru");
     }
 
     public LiveData<String> getText() {
