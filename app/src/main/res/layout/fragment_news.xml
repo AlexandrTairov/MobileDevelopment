@@ -20,7 +20,8 @@
             android:layout_height="86dp" android:id="@+id/newsButton1"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.533"
-            app:layout_constraintTop_toBottomOf="@+id/imageView" android:background="#FFFFFF"
+            app:layout_constraintTop_toBottomOf="@+id/imageView"
+            android:background="@drawable/my_button_bg"
             android:gravity="left" android:onClick="goToNews"/>
     <TextView
             android:text="@string/news1"
@@ -46,7 +47,9 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.571"
             app:layout_constraintTop_toBottomOf="@+id/textView5"
-            android:gravity="left" android:background="#FFFFFF" android:onClick="goToNews2"/>
+            android:gravity="left"
+            android:background="@drawable/my_button_bg"
+            android:onClick="goToNews2"/>
     <TextView
             android:text="@string/news2"
             android:layout_width="357dp"
