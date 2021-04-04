@@ -21,6 +21,8 @@
 
         <activity android:name=".EmployeeActivity"/>
         <activity android:name=".EmployeeActivity2"/>
+        <activity android:name=".NewsActivity1"/>
+        <activity android:name=".NewsActivity2"/>
     </application>
 
 </manifest>

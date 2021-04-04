@@ -55,4 +55,14 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, EmployeeActivity2.class);
         startActivity(intent);
     }
+
+    public void goToNews(View v) {
+        Intent intent = new Intent(this, NewsActivity1.class);
+        startActivity(intent);
+    }
+
+    public void goToNews2(View v) {
+        Intent intent = new Intent(this, NewsActivity2.class);
+        startActivity(intent);
+    }
 }
