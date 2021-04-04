@@ -1,16 +1,16 @@
-package com.example.mobile.ui.registration;
+package com.example.mobile.ui.aboutUs;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class RegistrationViewModel extends ViewModel {
+public class AboutUsViewModel extends ViewModel {
 
     private MutableLiveData<String> mText;
 
-    public RegistrationViewModel() {
+    public AboutUsViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is registration fragment");
+        mText.setValue("This is aboutUs fragment");
     }
 
     public LiveData<String> getText() {

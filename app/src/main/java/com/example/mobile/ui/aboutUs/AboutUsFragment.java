@@ -1,4 +1,4 @@
-package com.example.mobile.ui.shares;
+package com.example.mobile.ui.aboutUs;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -12,17 +12,17 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 import com.example.mobile.R;
 
-public class SharesFragment extends Fragment {
+public class AboutUsFragment extends Fragment {
 
-    private SharesViewModel sharesViewModel;
+    private AboutUsViewModel aboutUsViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        sharesViewModel =
-                ViewModelProviders.of(this).get(SharesViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_shares, container, false);
-        final TextView textView = root.findViewById(R.id.text_shares);
-        sharesViewModel.getText().observe(this, new Observer<String>() {
+        aboutUsViewModel =
+                ViewModelProviders.of(this).get(AboutUsViewModel.class);
+        View root = inflater.inflate(R.layout.fragment_aboutus, container, false);
+        final TextView textView = root.findViewById(R.id.text_aboutus);
+        aboutUsViewModel.getText().observe(this, new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 textView.setText(s);

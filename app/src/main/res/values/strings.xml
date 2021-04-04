@@ -11,4 +11,10 @@
     <string name="menu_basket">Корзина</string>
     <string name="menu_settings">Настройки</string>
     <string name="nav_registration">Регистрация</string>
+    <string name="menu_aboutUs">О нас</string>
+    <string name="menu_contacts">Контакты</string>
+    <string name="menu_timesheet">Расписание</string>
+    <string name="menu_directions">Направления</string>
+    <string name="menu_news">Новости</string>
+    <string name="todo">TODO</string>
 </resources>
