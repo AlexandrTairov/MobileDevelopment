@@ -3,15 +3,41 @@
                                                    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
                                                    android:layout_height="match_parent">
 
+
+    <FrameLayout android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="vertical" android:id="@+id/frameLayout" tools:ignore="MissingConstraints">
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="#009849"
+                    app:popupTheme="@style/AppTheme.PopupOverlay"/>
+        </LinearLayout>
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="@string/back"
+                android:textColor="#FFFFFF"
+                android:background="#009849"
+                android:onClick="back">
+        </Button>
+
+    </FrameLayout>
+
+
     <ImageView
             android:layout_width="379dp"
             android:layout_height="235dp"
             android:src="@drawable/news1"
             android:id="@+id/imageView"
-            app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginTop="10dp" app:layout_constraintEnd_toEndOf="parent"
+
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" android:contentDescription="@string/todo"
-            android:visibility="visible"/>
+            android:visibility="visible"
+            app:layout_constraintTop_toBottomOf="@+id/frameLayout" android:layout_marginTop="32dp"/>
     <TextView
             android:text="@string/newsbutton1"
             android:layout_width="355dp"
@@ -19,5 +45,6 @@
             app:layout_constraintEnd_toEndOf="@+id/imageView"
             app:layout_constraintStart_toStartOf="@+id/imageView"
             android:textColor="#040404"
-            android:textSize="18sp" android:gravity="left" app:layout_constraintTop_toBottomOf="@+id/imageView"/>
+            android:textSize="18sp" android:gravity="left" app:layout_constraintTop_toBottomOf="@+id/imageView"
+            android:layout_marginTop="16dp"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import com.example.mobile.ui.aboutUs.AboutUsFragment;
 
 public class EmployeeActivity extends Activity {
 
@@ -12,6 +13,11 @@ public class EmployeeActivity extends Activity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.employee);
+    }
+
+    public void back(View v) {
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
     }
 
 }

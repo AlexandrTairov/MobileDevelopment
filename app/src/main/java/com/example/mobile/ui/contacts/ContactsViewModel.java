@@ -5,7 +5,6 @@ import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 //Направления
 public class ContactsViewModel extends ViewModel {
-
     private MutableLiveData<String> mText;
     String[] names = { "Иван", "Марья", "Петр", "Антон", "Даша", "Борис",
             "Костя", "Игорь", "Анна", "Денис", "Андрей" };

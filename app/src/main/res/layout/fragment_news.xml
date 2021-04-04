@@ -5,58 +5,73 @@
         xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-    <ImageView
-            android:layout_width="379dp"
-            android:layout_height="235dp"
-            android:src="@drawable/news1"
-            android:id="@+id/imageView"
-            app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginTop="10dp" app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" android:contentDescription="@string/todo"
-            android:visibility="visible"/>
-    <Button
-            android:text="@string/newsbutton1"
-            android:layout_width="378dp"
-            android:layout_height="86dp" android:id="@+id/newsButton1"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.533"
-            app:layout_constraintTop_toBottomOf="@+id/imageView"
-            android:background="@drawable/my_button_bg"
-            android:gravity="left" android:onClick="goToNews"/>
-    <TextView
-            android:text="@string/news1"
-            android:layout_width="355dp"
-            android:layout_height="90dp" android:id="@+id/textView4"
-            app:layout_constraintTop_toTopOf="@+id/imageView" app:layout_constraintEnd_toEndOf="@+id/imageView"
-            app:layout_constraintStart_toStartOf="@+id/imageView" android:layout_marginTop="144dp"
-            android:textColor="#FFFFFF" android:background="#CC151414"
-            android:textSize="18sp" android:gravity="center"/>
-    <ImageView
-            android:layout_width="358dp"
-            android:layout_height="256dp"
-            android:src="@drawable/news2"
-            android:id="@+id/imageView2"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" android:contentDescription="@string/todo"
-            android:visibility="visible" app:layout_constraintHorizontal_bias="0.49"
-            app:layout_constraintTop_toBottomOf="@+id/newsButton1" android:layout_marginTop="12dp"/>
-    <Button
-            android:text="@string/newsbutton2"
-            android:layout_width="366dp"
-            android:layout_height="88dp" android:id="@+id/newsButton2"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.571"
-            app:layout_constraintTop_toBottomOf="@+id/textView5"
-            android:gravity="left"
-            android:background="@drawable/my_button_bg"
-            android:onClick="goToNews2"/>
-    <TextView
-            android:text="@string/news2"
-            android:layout_width="357dp"
-            android:layout_height="78dp" android:id="@+id/textView5"
-            android:textColor="#FFFFFF" android:background="#CC151414"
-            android:textSize="18sp" android:gravity="center"
-            app:layout_constraintTop_toTopOf="@+id/imageView2"
-            android:layout_marginTop="172dp" app:layout_constraintStart_toStartOf="@+id/imageView2"
-            app:layout_constraintEnd_toEndOf="@+id/imageView2" app:layout_constraintHorizontal_bias="0.103"/>
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <FrameLayout android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:orientation="vertical">
+                <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                    <ImageView
+                            android:layout_width="360dp"
+                            android:layout_height="235dp"
+                            android:src="@drawable/news1"
+                            android:id="@+id/imageView"
+                            android:layout_marginTop="10dp"
+                            android:contentDescription="@string/todo"
+                            android:visibility="visible" android:layout_gravity="center"/>
+                    <LinearLayout
+                            android:layout_width="360dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:orientation="vertical">
+                        <TextView
+                                android:text="@string/news1"
+                                android:layout_width="360dp"
+                                android:layout_height="90dp" android:id="@+id/textView4"
+                                android:textColor="#FFFFFF" android:background="#CC151414"
+                                android:textSize="18sp" android:gravity="center"/>
+
+                        <Button
+                                android:text="@string/newsbutton1"
+                                android:layout_width="360dp"
+                                android:layout_height="85dp" android:id="@+id/newsButton1"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/imageView"
+                                android:background="@drawable/my_button_bg"
+                                android:gravity="left" android:onClick="goToNews"/>
+                        <ImageView
+                                android:layout_width="360dp"
+                                android:layout_height="235dp"
+                                android:src="@drawable/news2"
+                                android:id="@+id/imageView2"
+                                android:contentDescription="@string/todo"
+                                android:visibility="visible" app:layout_constraintHorizontal_bias="0.49"
+                                app:layout_constraintTop_toBottomOf="@+id/newsButton1" android:layout_marginTop="12dp"
+                                android:layout_gravity="center"/>
+                        <TextView
+                                android:text="@string/news2"
+                                android:layout_width="350dp"
+                                android:layout_height="78dp" android:id="@+id/textView5"
+                                android:textColor="#FFFFFF" android:background="#CC151414"
+                                android:textSize="18sp" android:gravity="center"
+                                app:layout_constraintEnd_toEndOf="@+id/imageView2"
+                                app:layout_constraintHorizontal_bias="0.103"/>
+                        <Button
+                                android:text="@string/newsbutton2"
+                                android:layout_width="350dp"
+                                android:layout_height="85dp"
+                                android:id="@+id/newsButton2"
+                                android:gravity="left"
+                                android:background="@drawable/my_button_bg"
+                                android:onClick="goToNews2"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </FrameLayout>
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
