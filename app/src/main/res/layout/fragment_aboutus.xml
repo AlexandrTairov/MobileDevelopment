@@ -2,8 +2,9 @@
 <androidx.constraintlayout.widget.ConstraintLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:layout_width="match_parent"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
         android:layout_height="match_parent">
+
 
     <TextView
             android:id="@+id/text_aboutus"
@@ -17,4 +18,33 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" android:gravity="center_horizontal"/>
+    <ImageButton
+            android:layout_width="183dp"
+            android:layout_height="269dp" app:srcCompat="@drawable/employee" android:id="@+id/imageButton"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintVertical_bias="0.114"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+    />
+    <TextView
+            android:text="Employee 1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/textView"
+            app:layout_constraintTop_toBottomOf="@+id/imageButton" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="72dp" android:layout_marginTop="8dp" android:layout_marginStart="72dp"/>
+    <ImageButton
+            android:layout_width="183dp"
+            android:layout_height="269dp" app:srcCompat="@drawable/employee" android:id="@+id/imageButton2"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintVertical_bias="0.114"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"/>
+    <TextView
+            android:text="Employee 2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/textView2"
+            app:layout_constraintTop_toBottomOf="@+id/imageButton2" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp" android:layout_marginEnd="76dp" android:layout_marginRight="76dp"/>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
