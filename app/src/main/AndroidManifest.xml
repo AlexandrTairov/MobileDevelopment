@@ -23,6 +23,13 @@
         <activity android:name=".EmployeeActivity2"/>
         <activity android:name=".NewsActivity1"/>
         <activity android:name=".NewsActivity2"/>
+        <activity android:name=".PageComputerDirection"/>
+        <activity android:name=".PageCreativeDirection"/>
+        <activity android:name=".PageDevelopmentOfIntelligence"/>
+        <activity android:name=".PageEngineeringDirection"/>
+        <activity android:name=".PagePreparationForTheOGEandUSE"/>
+        <activity android:name=".PageSportsDirection"/>
+
     </application>
 
 </manifest>

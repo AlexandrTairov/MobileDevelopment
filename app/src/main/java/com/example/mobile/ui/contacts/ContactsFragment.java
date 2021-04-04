@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ListView;
 import android.widget.TextView;
 import androidx.annotation.Nullable;
 import androidx.annotation.NonNull;
@@ -28,6 +29,13 @@ public class ContactsFragment extends Fragment {
                 textView.setText(s);
             }
         });
+//        final ListView listView = root.findViewById(R.id.lvMain);
+//        contactsViewModel.getText().observe(this, new Observer<String>() {
+//            @Override
+//            public void onChanged(@Nullable String s) {
+//                listView.ge;
+//            }
+//        });
         return root;
     }
 }

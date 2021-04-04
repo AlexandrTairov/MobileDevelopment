@@ -3,7 +3,7 @@ package com.example.mobile.ui.news;
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
-
+//новости
 public class NewsViewModel extends ViewModel {
 
     private MutableLiveData<String> mText;

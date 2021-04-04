@@ -16,19 +16,19 @@ import com.google.android.material.navigation.NavigationView;
 
 public class MainActivity extends AppCompatActivity {
 
-    private AppBarConfiguration mAppBarConfiguration;
+    private AppBarConfiguration mAppBarConfiguration; //бургер меню ипорт со страницы layout
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) {  //onCreate - при открытии приложения срабатывает метод
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_main);//связка текущей страницы с acrivity_main.xml
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         NavigationView navigationView = findViewById(R.id.nav_view);
-        // Passing each menu ID as a set of Ids because each
-        // menu should be considered as top level destinations.
-        mAppBarConfiguration = new AppBarConfiguration.Builder(
+        // Передача каждого идентификатора меню в виде набора идентификаторов, поскольку каждый
+        // меню следует рассматривать как пункты назначения верхнего уровня.
+        mAppBarConfiguration = new AppBarConfiguration.Builder(      //добавляем страницы в бургер меню
                 R.id.nav_news, R.id.nav_directions,
                 R.id.nav_timesheet, R.id.nav_contacts, R.id.nav_aboutus)
                 .setDrawerLayout(drawer)
@@ -65,4 +65,36 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, NewsActivity2.class);
         startActivity(intent);
     }
+
+    public void goToPageComputerDirection(View v) {
+        Intent intent = new Intent(this, PageComputerDirection.class);
+        startActivity(intent);
+    }
+
+    public void goToPageCreativeDirection(View v) {
+        Intent intent = new Intent(this, PageCreativeDirection.class);
+        startActivity(intent);
+    }
+
+    public void goToPageDevelopmentOfIntelligence(View v) {
+        Intent intent = new Intent(this, PageDevelopmentOfIntelligence.class);
+        startActivity(intent);
+    }
+
+    public void goToPageEngineeringDirection(View v) {
+        Intent intent = new Intent(this, PageEngineeringDirection.class);
+        startActivity(intent);
+    }
+
+    public void goToPagePreparationForTheOGEandUSE(View v) {
+        Intent intent = new Intent(this, PagePreparationForTheOGEandUSE.class);
+        startActivity(intent);
+    }
+
+
+    public void goToPPageSportsDirection(View v) {
+        Intent intent = new Intent(this, PageSportsDirection.class);
+        startActivity(intent);
+    }
+
 }

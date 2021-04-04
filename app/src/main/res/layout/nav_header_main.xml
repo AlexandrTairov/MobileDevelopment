@@ -16,5 +16,5 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" app:srcCompat="@drawable/title" android:id="@+id/imageView2"
             tools:layout_editor_absoluteY="16dp" app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginLeft="4dp" android:layout_marginStart="4dp"/>
+            android:layout_marginLeft="4dp" android:layout_marginStart="4dp" tools:ignore="MissingConstraints"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -21,6 +21,7 @@ public class DirectionsFragment extends Fragment {
         settingsViewModel =
                 ViewModelProviders.of(this).get(DirectionsViewModel.class);
         View root = inflater.inflate(R.layout.fragment_directions, container, false);
+
         final TextView textView = root.findViewById(R.id.text_directions);
         settingsViewModel.getText().observe(this, new Observer<String>() {
             @Override

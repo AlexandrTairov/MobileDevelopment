@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView
+            android:layout_width="380dp"
+            android:layout_height="270dp"
+            android:src="@drawable/employee1"
+            android:id="@+id/imageView"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="10dp" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" android:contentDescription="@string/todo"
+            tools:visibility="visible" android:visibility="visible"/>
+
+    <TextView
+            android:text="@string/employee1_description"
+            android:layout_width="414dp"
+            android:layout_height="238dp" android:id="@+id/textView3" tools:ignore="MissingConstraints"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" tools:layout_editor_absoluteX="0dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
