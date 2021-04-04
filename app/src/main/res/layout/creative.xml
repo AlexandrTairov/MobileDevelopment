@@ -8,7 +8,7 @@
     <ImageView
             android:layout_width="380dp"
             android:layout_height="270dp"
-            android:src="@drawable/employee1"
+            android:src="@drawable/creative"
             android:id="@+id/imageView"
             app:layout_constraintTop_toTopOf="parent"
             android:layout_marginTop="10dp" app:layout_constraintEnd_toEndOf="parent"
@@ -16,7 +16,7 @@
             tools:visibility="visible" android:visibility="visible"/>
 
     <TextView
-            android:text="@string/employee1_description"
+            android:text="@string/creative"
             android:layout_width="414dp"
             android:layout_height="238dp" android:id="@+id/textView3" tools:ignore="MissingConstraints"
             app:layout_constraintTop_toBottomOf="@+id/imageView" tools:layout_editor_absoluteX="0dp"/>
