@@ -1,4 +1,4 @@
-package com.example.mobile.ui.home;
+package com.example.mobile.ui.timesheet;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -12,17 +12,17 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 import com.example.mobile.R;
 
-public class HomeFragment extends Fragment {
+public class TimesheetFragment extends Fragment {
 
-    private HomeViewModel homeViewModel;
+    private TimesheetViewModel timesheetViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        homeViewModel =
-                ViewModelProviders.of(this).get(HomeViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_home, container, false);
-        final TextView textView = root.findViewById(R.id.text_home);
-        homeViewModel.getText().observe(this, new Observer<String>() {
+        timesheetViewModel =
+                ViewModelProviders.of(this).get(TimesheetViewModel.class);
+        View root = inflater.inflate(R.layout.fragment_timesheet, container, false);
+        final TextView textView = root.findViewById(R.id.text_timesheet);
+        timesheetViewModel.getText().observe(this, new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 textView.setText(s);

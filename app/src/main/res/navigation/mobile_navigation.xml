@@ -3,42 +3,37 @@
             xmlns:app="http://schemas.android.com/apk/res-auto"
             xmlns:tools="http://schemas.android.com/tools"
             android:id="@+id/mobile_navigation"
-            app:startDestination="@+id/nav_catalog">
+            app:startDestination="@+id/nav_news" tools:ignore="InvalidNavigation">
 
     <fragment
-            android:id="@+id/nav_home"
-            android:name="com.example.mobile.ui.home.HomeFragment"
-            android:label="@string/menu_home"
-            tools:layout="@layout/fragment_home"/>
+            android:id="@+id/nav_news"
+            android:name="com.example.mobile.ui.news.NewsFragment"
+            android:label="@string/menu_news"
+            tools:layout="@layout/fragment_news"/>
 
     <fragment
-            android:id="@+id/nav_catalog"
-            android:name="com.example.mobile.ui.catalog.CatalogFragment"
-            android:label="@string/menu_catalog"
-            tools:layout="@layout/fragment_catalog"/>
+            android:id="@+id/nav_directions"
+            android:name="com.example.mobile.ui.contacts.ContactsFragment"
+            android:label="@string/menu_directions"
+            tools:layout="@layout/fragment_contacts"/>
 
     <fragment
-            android:id="@+id/nav_shares"
-            android:name="com.example.mobile.ui.shares.SharesFragment"
-            android:label="@string/menu_shares"
-            tools:layout="@layout/fragment_shares"/>
+            android:id="@+id/nav_timesheet"
+            android:name="com.example.mobile.ui.timesheet.TimesheetFragment"
+            android:label="@string/menu_timesheet"
+            tools:layout="@layout/fragment_timesheet"/>
 
     <fragment
-            android:id="@+id/nav_basket"
-            android:name="com.example.mobile.ui.basket.BasketFragment"
-            android:label="@string/menu_basket"
-            tools:layout="@layout/fragment_basket"/>
+            android:id="@+id/nav_contacts"
+            android:name="com.example.mobile.ui.directions.DirectionsFragment"
+            android:label="@string/menu_contacts"
+            tools:layout="@layout/fragment_directions"/>
 
     <fragment
-            android:id="@+id/nav_settings"
-            android:name="com.example.mobile.ui.settings.SettingsFragment"
-            android:label="@string/menu_settings"
-            tools:layout="@layout/fragment_settings"/>
+            android:id="@+id/nav_aboutus"
+            android:name="com.example.mobile.ui.aboutUs.AboutUsFragment"
+            android:label="@string/menu_aboutUs"
+            tools:layout="@layout/fragment_aboutus"/>
 
-    <fragment
-            android:id="@+id/nav_registration"
-            android:name="com.example.mobile.ui.registration.RegistrationFragment"
-            android:label="Registration"
-            tools:layout="@layout/fragment_registration"/>
 
 </navigation>

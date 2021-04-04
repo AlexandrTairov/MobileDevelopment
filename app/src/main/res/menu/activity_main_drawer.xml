@@ -5,29 +5,25 @@
 
     <group android:checkableBehavior="single" tools:ignore="ExtraText">
         <item
-                android:id="@+id/nav_home"
-                android:title="@string/menu_home"
-                android:icon="@drawable/menu_home"/>
+                android:id="@+id/nav_news"
+                android:title="@string/menu_news"
+                android:icon="@drawable/menu_news"/>
         <item
-                android:id="@+id/nav_catalog"
-                android:title="@string/menu_catalog"
-                android:icon="@drawable/menu_catalog"/>
+                android:id="@+id/nav_directions"
+                android:title="@string/menu_directions"
+                android:icon="@drawable/menu_directions"/>
         <item
-                android:id="@+id/nav_shares"
-                android:title="@string/menu_shares"
-                android:icon="@drawable/menu_shares"/>
+                android:id="@+id/nav_timesheet"
+                android:title="@string/menu_timesheet"
+                android:icon="@drawable/menu_timesheet"/>
         <item
-                android:id="@+id/nav_basket"
-                android:title="@string/menu_basket"
-                android:icon="@drawable/menu_basket"/>
+                android:id="@+id/nav_contacts"
+                android:title="@string/menu_contacts"
+                android:icon="@drawable/menu_contacts"/>
         <item
-                android:id="@+id/nav_settings"
-                android:icon="@drawable/menu_settings"
-                android:title="@string/menu_settings"/>
-        <item
-            android:id="@id/nav_registration"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="@string/nav_registration"/>
+                android:id="@+id/nav_aboutus"
+                android:icon="@drawable/menu_info"
+                android:title="@string/menu_aboutUs"/>
     </group>
 
 </menu>
