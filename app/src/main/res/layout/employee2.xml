@@ -38,7 +38,7 @@
             app:layout_constraintTop_toBottomOf="@+id/frameLayout" android:layout_marginTop="32dp"
             app:layout_constraintHorizontal_bias="0.516"/>
     <TextView
-            android:text="@string/test"
+            android:text="@string/malisheva"
             android:layout_width="414dp"
             android:layout_height="238dp" android:id="@+id/textView3" tools:ignore="MissingConstraints"
             app:layout_constraintTop_toBottomOf="@+id/imageView" tools:layout_editor_absoluteX="-2dp"
