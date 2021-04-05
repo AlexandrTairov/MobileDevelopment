@@ -30,7 +30,7 @@
     <ImageView
             android:layout_width="380dp"
             android:layout_height="270dp"
-            android:src="@drawable/Malisheva"
+            android:src="@drawable/malisheva"
             android:id="@+id/imageView"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" android:contentDescription="@string/todo"
